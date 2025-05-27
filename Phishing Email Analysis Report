@@ -32,7 +32,17 @@ Slightly generic phrasing; though professional-looking, phishing emails often av
 5.Social Engineering Tactics
 Trick Used: Fear and urgency — the attacker tries to create panic by warning of account suspension.
 Impersonation: Pretending to be PayPal support.
-Fake Link: Designed to collect credentials on a phishing page.
+Fake Link: Designed to collect credentials on a phishing page
+Summary of Phishing Traits Found in the Email:
+Spoofed Sender Address – Appears to be from PayPal but likely fake or unverified.
+Fake URL – Links to a malicious domain (paypal-account-verify.com) instead of the official PayPal site.
+Urgent Language – Threatens account suspension if action is not taken within 24 hours.
+Generic Greeting – Uses “Dear Customer” instead of the recipient’s name.
+Lack of Personal Information – No reference to specific account details or transaction history.
+Threat-Based Social Engineering – Uses fear to manipulate the recipient into clicking the link.
+No Email Signatures or Contact Details – Lacks legitimate branding or official support contact.
+Unusual Domain – The link uses a suspicious domain name unrelated to PayPal.
+Call to Immediate Action – Urges the user to “verify now,” a classic phishing technique.
 
 Conclusion:
 This email is a clear phishing attempt designed to steal PayPal login credentials. It uses spoofed identity, fake links, fear tactics, and lack of personalization to deceive the recipient.
