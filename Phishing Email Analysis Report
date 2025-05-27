@@ -1,0 +1,39 @@
+
+Phishing Email Analysis Report:
+
+Subject: Urgent: Limited Access to Your PayPal Account
+Sender: no-reply@paypal-account-verify.com (likely spoofed or fake domain)
+Source: Custom simulated phishing email based on awareness training
+
+
+1.Spoofed Email Address:
+Found: Yes
+ The sender uses a suspicious domain paypal-account-verify.com, which is not the official PayPal domain (paypal.com). This is an example of domain spoofing.
+
+2.Header Analysis:
+Findings:
+SPF: Fail (likely not authorized to send mail on behalf of PayPal)
+DKIM: Fail (no cryptographic signature from PayPal)
+DMARC: Fail (domain policy likely not enforced)
+Suspicious Routing: Yes (Email may come from an unknown or untrusted IP address)
+
+3. Links & Attachments
+Suspicious Links:
+https://paypal-account-verify.com/login → This is a fake login page used to steal credentials. The domain mimics PayPal but is clearly fraudulent.
+Suspicious Attachments: No (In this case, the attack is link-based, not file-based)
+
+4. Language Indicators
+Urgency Detected: Yes
+Phrases like “Failure to verify your identity within 24 hours will result in permanent account suspension” are designed to create panic.Threat Language: Yes
+Mention of account suspension is used to pressure the recipient into acting without thinking.
+Spelling/Grammar Errors: Minor
+Slightly generic phrasing; though professional-looking, phishing emails often avoid complex grammar.
+
+5.Social Engineering Tactics
+Trick Used: Fear and urgency — the attacker tries to create panic by warning of account suspension.
+Impersonation: Pretending to be PayPal support.
+Fake Link: Designed to collect credentials on a phishing page.
+
+Conclusion:
+This email is a clear phishing attempt designed to steal PayPal login credentials. It uses spoofed identity, fake links, fear tactics, and lack of personalization to deceive the recipient.
+
