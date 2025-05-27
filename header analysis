@@ -1,0 +1,49 @@
+Header Analyzed
+Email Subject: Urgent: Account Suspension Notice!
+Delivery Information
+Ok Icon DMARC Compliant
+Ok Icon SPF Alignment
+Ok Icon SPF Authenticated
+Ok Icon DKIM Alignment
+Ok Icon DKIM Authenticated
+Relay Information
+Received Delay:	1 seconds
+
+Hop	Delay	From	By	With	Time (UTC)	Blacklist
+1	*	authenticated-user 5.45.184.142	s9.inboxpress.eu	cipher TLS_AES_256_GCM_SHA384 (256/256 bits) key-exchange X25519 server-signature RSA-PSS (2048 bits) server-digest SHA256) (No client certificate requested)	5/27/2025 10:06:08 AM	Not blacklisted
+2	1 Second	s9.inboxpress.eu 5.45.184.142	mx.google.com	ESMTPS	5/27/2025 10:06:09 AM	Not blacklisted
+3	0 seconds		2002:a05:7022:aa6:b0:9a:bf4:1704	SMTP	5/27/2025 10:06:09 AM	
+
+
+SPF and DKIM Information
+dmarc:anonymousemail.eu   
+v=DMARC1; p=reject; rua=mailto:postmaster@anonymousemail.eu; pct=100
+spf:anonymousemail.eu:5.45.184.142   
+v=spf1 mx -all
+dkim:anonymousemail.eu:mail  
+Dkim Public Record:
+v=DKIM1; h=sha256; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyrvtVflBB6fbr9dE4GG37VCTYpAdLUjGfySl6pNOZjbHsclkFqShVNZJ6Hh7A3qIv4dVqDwWGdbpge5YxVeuBQWfW9Ra636o0lADapFJKVavc4yRzC6e1+/qh+9nRBUWFJa6KxStQ0qN5vDLekOJc7o3f3oO3AZlo+/H6utHzzKRLULLYT2tzYo3zS0NA6T+6M9vTOVynv7UYJt9GSRp7QBjFl8Tazp2ZYVAI70u3cjX4gQE9Cca+spT+XLpVsijsbU0/Ioa7B3UojX8bqGfFJcZrBPHNkaThvDp28WADTe5INYb/1l7gsxY7S6iAZtBZut2i2qwbnaDOaMqSU94wwIDAQAB
+Dkim Signature:
+v=1; a=rsa-sha256; c=relaxed/relaxed; d=anonymousemail.eu; s=mail; t=1748340368; bh=nndapfIo0ojPnb/Wn0SRo9xgjfXk1/EyFAq441l5L7o=; h=Date:To:From:Subject:List-Unsubscribe:From; b=uObh56l5/65rQcI5l4BafeKPjyDVsYhDhvRXiwd2JiEa3JFWkDe/Js7Z+4tsebTrn yofk5U+dmc7uovZ4h1bRrG6IBUpXNB/s4rv+06UOLSNNCWrdzl1swaQu8sDCkiK1oy 0vgtA2NM+aPD1q/nHiE/SVEJ1JtXyJ9ZZh4Bh8pVleqdZ5Zw1Q/aTqZzlSKXcJHQ1f 87cpLIRabs/Ej2aZIiugg6zoap3lvkkU2HNv3hQYp+WoQFPZByXKTGi/3bUUNdsvHN TFok/3lnrbzvXfGYhWggdZ3xGmWrTfDo54Diteu4Id8+ZsLp8J3Fh7Rc5zNiAlgxDX c6GmUTphA6L6A==
+Headers Found
+Header Name	Header Value
+Delivered-To	sabari7sabari@gmail.com
+X-Google-Smtp-Source	AGHT+IHIh8F6N3hKNIL0/oEbRWGAvYmPSHThhOjyh/mBWSK/wwCTAo2PVyROpe9M4cchIXw6efhn
+X-Received	by 2002:a17:907:7f89:b0:ad2:595d:dd3a with SMTP id a640c23a62f3a-ad85b278c02mr1129730466b.49.1748340369235; Tue, 27 May 2025 03:06:09 -0700 (PDT)
+ARC-Seal	i=1; a=rsa-sha256; t=1748340369; cv=none; d=google.com; s=arc-20240605; b=FUBfV5urEEdhqA6+fGj6GxN/XS6vdkSrI1ST92OoJJX4y2UyD0hsXqh7gY3qq0b2XH Yf7OVw2k5VAZh2FEyq+PdvqORQtox9i1N8CuzH6yDOmSzG03y1CrSjgs2voeerDvDBiE ljMI7ak8aSEXfveyQWtq6M6qsWBPPIEXIAqca9kpoLp0pRRsavnQQ+2yXu++qB/VfnOK U/gIO3wavI8GQnow4hAl4zOm7NXgjUYqirgN5z9C+CZOzS/31EyerkzRDmH8X2cfBwH8 vTodsYiZPWSg3uMkE3D5KexuxtDk7C9zBXECg0PDJGTXvGVKtrCbQsw6ZAn+O40VVuRp CRwA==
+ARC-Message-Signature	i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605; h=content-transfer-encoding:mime-version:list-unsubscribe :list-unsubscribe-post:message-id:subject:from:to:date :dkim-signature; bh=nndapfIo0ojPnb/Wn0SRo9xgjfXk1/EyFAq441l5L7o=; fh=dpTnL1l8mzBaj7hXxGLQevWrlUAiTqMq/eO+QF76ikk=; b=HKIch7G6AzwlVZNrE9eBfqFK4ZX5SaTkD/S5pFLHFxhl0Qmh/NvbnmOvgAcw4XSkM3 T3fn3L90YDjk3Uiq5gowBoNRfzUzelgXbMiXpSHOBe5gw2ndxnM1ZCYTVmtmvD0hKkqQ NwK+PzIMYhMcWznKLSFz7ctlkAEnH8RD1k8bR0o1nf7lU+lc4qWpatHGCKUtd54r40MJ wgSFAFN7q56y6Q7exGB82QIytGdLsF8Lf/0rL43O50FntY8GRfwyQMl1MkMASy5aRL5t onI+IFQQFw6WprzaapQ0kBew61eWMWjP66s5GyVt7nOd8TPvJN41HEPej9VlLt15XTht LK2A==; dara=google.com
+ARC-Authentication-Results	i=1; mx.google.com; dkim=pass header.i=@anonymousemail.eu header.s=mail header.b=uObh56l5; spf=pass (google.com: domain of noreply@anonymousemail.eu designates 5.45.184.142 as permitted sender) smtp.mailfrom=noreply@anonymousemail.eu; dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=anonymousemail.eu
+Return-Path	<noreply@anonymousemail.eu>
+Received-SPF	pass (google.com: domain of noreply@anonymousemail.eu designates 5.45.184.142 as permitted sender) client-ip=5.45.184.142;
+Authentication-Results	mx.google.com; dkim=pass header.i=@anonymousemail.eu header.s=mail header.b=uObh56l5; spf=pass (google.com: domain of noreply@anonymousemail.eu designates 5.45.184.142 as permitted sender) smtp.mailfrom=noreply@anonymousemail.eu; dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=anonymousemail.eu
+DKIM-Signature	v=1; a=rsa-sha256; c=relaxed/relaxed; d=anonymousemail.eu; s=mail; t=1748340368; bh=nndapfIo0ojPnb/Wn0SRo9xgjfXk1/EyFAq441l5L7o=; h=Date:To:From:Subject:List-Unsubscribe:From; b=uObh56l5/65rQcI5l4BafeKPjyDVsYhDhvRXiwd2JiEa3JFWkDe/Js7Z+4tsebTrn yofk5U+dmc7uovZ4h1bRrG6IBUpXNB/s4rv+06UOLSNNCWrdzl1swaQu8sDCkiK1oy 0vgtA2NM+aPD1q/nHiE/SVEJ1JtXyJ9ZZh4Bh8pVleqdZ5Zw1Q/aTqZzlSKXcJHQ1f 87cpLIRabs/Ej2aZIiugg6zoap3lvkkU2HNv3hQYp+WoQFPZByXKTGi/3bUUNdsvHN TFok/3lnrbzvXfGYhWggdZ3xGmWrTfDo54Diteu4Id8+ZsLp8J3Fh7Rc5zNiAlgxDX c6GmUTphA6L6A==
+Date	Tue, 27 May 2025 10:06:08 +0000
+To	sabari7sabari@gmail.com
+From	Anonymousemail <noreply@anonymousemail.eu>
+Subject	Urgent: Account Suspension Notice!
+Message-ID	<1ca83814072a339b451f52229b814aa7@anonymousemail.eu>
+List-Unsubscribe-Post	List-Unsubscribe=One-Click
+List-Unsubscribe	<https://anonymousemail.eu/unsubscribe.php?uid=Y0NybjZrQ3Bod0U4ZUYrdnRTTUlMUndsZm0zcnhjRSttOUs5R2R3Q3Zjaz0=>
+MIME-Version	1.0
+Content-Type	multipart/alternative; boundary="b1=_6opkLGOWGF71XbKQ8KLDES8B2C2KTZG8ShvPIwNGxbI"
+Content-Transfer-Encoding	8bit
